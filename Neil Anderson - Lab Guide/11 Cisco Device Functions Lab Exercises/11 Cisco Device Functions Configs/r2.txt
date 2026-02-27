@@ -1,0 +1,16 @@
+enable
+!
+configure terminal
+!
+hostname R2
+!
+interface GigabitEthernet0/0
+ ip address 10.10.10.2 255.255.255.0
+ duplex auto
+ speed auto
+ no shutdown
+!
+line con 0
+ exec-timeout 30 0
+!
+end

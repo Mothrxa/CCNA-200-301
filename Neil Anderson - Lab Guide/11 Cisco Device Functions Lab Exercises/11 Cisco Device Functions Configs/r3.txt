@@ -1,0 +1,16 @@
+enable
+!
+configure terminal
+!
+hostname R3
+!
+interface GigabitEthernet0/1
+ ip address 10.10.10.3 255.255.255.0
+ duplex auto
+ speed auto
+ no shutdown
+!
+line con 0
+ exec-timeout 30 0
+!
+end

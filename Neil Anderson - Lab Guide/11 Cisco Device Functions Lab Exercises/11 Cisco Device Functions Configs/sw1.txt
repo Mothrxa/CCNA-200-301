@@ -1,0 +1,10 @@
+enable
+!
+configure terminal
+!
+hostname SW1
+!
+line con 0
+ exec-timeout 30 0
+!
+end

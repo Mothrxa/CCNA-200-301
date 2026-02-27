@@ -1,0 +1,5 @@
+hostname R9
+!
+interface FastEthernet0/0
+ip address 172.16.0.9 255.255.255.0
+no shutdown
