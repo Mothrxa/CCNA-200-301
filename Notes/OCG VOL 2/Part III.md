@@ -174,7 +174,6 @@
 	- (Switch)#show ip dhcp snooping [binding]
 - *ARP Inspection*
 	- (config)#ip arp inspection {vlan **vlan-id** | validate {ip | src-mac | dst-mac}}
-	- (config)#
 	- (config)#errdisable recovery cause arp-inspection
 	- (config-if)#ip arp inspection trust
 	- (config-if)#ip arp inspection limit rate {**number** [burst interval **seconds**] | none}

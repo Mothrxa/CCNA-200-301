@@ -33,6 +33,17 @@
 	- Look for the mention of the voice VLAN ID in `show interfaces type id switchport` command.
 	- Look for both the voice and data (access) VLAN IDs in the output of `show interfaces type id trunk` command.
 	- Do not expect to see the port listed in the list of operational trunks as listed by `show interfaces trunk` command.
+<br>
+- **Trunking Administrative Mode Options with the ==switchport== mode Command**
+
+	- $the\ negotiation\ is\ made\ to\ choose\ whether\ the\ link\ becomes\ a\ trunk\ or\ an\ access\ port.$
+
+| **Command**           |                                                               **Description**                                                                |
+| :-------------------- | :------------------------------------------------------------------------------------------------------------------------------------------: |
+| access                |                                                   Always act as an access (nontrunk) port                                                    |
+| trunk                 |                                                          Always act as a trunk port                                                          |
+| <br>dynamic desirable |       Initiates negotiation messages and responds<br>to negotiation messages to dynamically<br>choose whether to start using trunking        |
+| <br>dynamic auto      | Passively waits to receive trunk negotiation<br>messages, at which point the switch will<br>respond and negotiate whether to use<br>trunking |
 ### Configuration commands
 - (config)#vlan **vlan-id** (creates a Vlan)
 - (config)#interface **interface** (can use **interface range ==portType== 0/N** to configure multiple interfaces at the same time)
@@ -51,19 +62,6 @@
 - (Switch)#show mac address-table
 - (Switch)#vtp mode transparent | vtp mode off  ---- show vtp status
 - (config-if)#switchport voice **vlan-id** (activates voice Vlan in **vlan-id**)
-<br>
-
-- **Trunking Administrative Mode Options with the ==switchport== mode Command**
-
-	- $the\ negotiation\ is\ made\ to\ choose\ whether\ the\ link\ becomes\ a\ trunk\ or\ an\ access\ port.$
-
-| **Command**           |                                                               **Description**                                                                |
-| :-------------------- | :------------------------------------------------------------------------------------------------------------------------------------------: |
-| access                |                                                   Always act as an access (nontrunk) port                                                    |
-| trunk                 |                                                          Always act as a trunk port                                                          |
-| <br>dynamic desirable |       Initiates negotiation messages and responds<br>to negotiation messages to dynamically<br>choose whether to start using trunking        |
-| <br>dynamic auto      | Passively waits to receive trunk negotiation<br>messages, at which point the switch will<br>respond and negotiate whether to use<br>trunking |
-
 # Chapter 9
 
 ```

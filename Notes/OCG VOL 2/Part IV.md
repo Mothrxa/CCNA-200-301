@@ -71,8 +71,8 @@
 		- (config)#ntp trusted-key **key-number**
 	- (config)#clock timezone **timezone-label -hour**
 	- (config)#clock summer-time **DST-label** recurring
-	- (config)#clock set **hours:minutes:seconds dd mm yyyy**
-	- (config)#calendar set **hours:minutes:seconds dd mm yyyy**
+	- (~)#clock set **hours:minutes:seconds dd mm yyyy**
+	- (~)#calendar set **hours:minutes:seconds dd mm yyyy**
 	- (config)#clock update-calendar (sync the hard-clock to the soft-clock)
 	- (config)#clock read-calendar (sync the soft-clock with the hard-clock)
 	- *Show Config*
