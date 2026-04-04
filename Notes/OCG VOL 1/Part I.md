@@ -1,6 +1,5 @@
 # Intro to networking
 ---
-
 # Chapter 1
 ## TCP/IP Networking
 
@@ -16,12 +15,15 @@
 
 
 # Chapter 2
-	- Optical fiber allows longer cabling distance between nodes
-	- Crossover cable: If the endpoints transmit on the same pin pair
-	- Straight-through cable: If the endpoints transmit on different pin pairs
-	- PC/Router/WAP transmits on pins 1&2 - Switch/Hub transmits on pins 3&6
-	- AUTO-MDIX: detect the cabling type and swap pins if needed
-	- Multimode cabling improves the maximum distances over UTP and uses less expensive transmitters compared to Singlemode
+```
+- Optical fiber allows longer cabling distance between nodes.
+- Crossover cable: If the endpoints transmit on the same pin pair.
+- Straight-through cable: If the endpoints transmit on different pin pairs.
+- PC/Router/WAP transmits on pins 1&2 - Switch/Hub transmits on pins 3&6.
+- AUTO-MDIX: detect the cabling type and swap pins if needed.
+- Multimode cabling improves the maximum distances over UTP and uses less expensive transmitters compared to 
+  Singlemode.
+```
 
 ## Cabling 
 

@@ -13,22 +13,22 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JIT Notes/1.Network_Devices.md",
-                "mode": "source",
+                "file": "JIT Notes/5.Ethernet_LAN_Switching_Part1.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1.Network_Devices"
+              "title": "5.Ethernet_LAN_Switching_Part1"
             }
           },
           {
-            "id": "8835f46c5fad3b01",
+            "id": "62e3e03bdbc1ee31",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "OCG VOL 1/Part I.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -185,20 +185,25 @@
   },
   "active": "075eadf81cc73422",
   "lastOpenFiles": [
+    "JIT Notes/4.IPv4_Addressing_Part1.md",
+    "JIT Notes/4.Intro_to_CLI.md",
+    "JIT Notes/3.OSI_Model_TCPSuite.md",
+    "JIT Notes/2.Interfaces_and_Cables.md",
     "OCG VOL 1/Part I.md",
-    "OCG VOL 2/Part IV.md",
-    "OCG VOL 1/Part VII.md",
-    "OCG VOL 2/Part V.md",
-    "OCG VOL 2/Part III.md",
-    "OCG VOL 1/Part II.md",
-    "OCG VOL 1/Part VI.md",
     "OCG VOL 1/Part V.md",
-    "OCG VOL 1/Part IV.md",
+    "OCG VOL 1/Part VI.md",
+    "OCG VOL 1/Part II.md",
+    "Untitled.canvas",
     "OCG VOL 1/Part III.md",
+    "OCG VOL 2/Part V.md",
+    "OCG VOL 2/Part IV.md",
+    "JIT Notes/1.Network_Devices.md",
+    "OCG VOL 1/Part VII.md",
+    "OCG VOL 2/Part III.md",
+    "OCG VOL 1/Part IV.md",
     "OCG VOL 2/Topics covered.md",
     "OCG VOL 2/Part VI.md",
     "Exam Updates.md",
-    "JIT Notes/4.Intro_to_CLI.md",
     "JIT Notes/29.First_Hop_Redundancy_Protocols.md",
     "JIT Notes/63.Ansible_Puppet_Chef.md",
     "OCG VOL 2/Part I.md",
@@ -210,10 +215,6 @@
     "OCG VOL 2/Part II.md",
     "Untitled 1.md",
     "Assets/Log Severity.png",
-    "OCG VOL 1/Topics covered.md",
-    "Cisco IOS CLI.md",
-    "etc/Study Plan.md",
-    "etc/README.md",
     "Assets/Tag.png",
     "Assets/Policy tag.png",
     "Assets/Policy profile - advanced.png",
@@ -231,7 +232,6 @@
     "Notess/H. ACLs",
     "Notess/9. Protocols",
     "Notess/8. VLANs",
-    "Untitled 1.canvas",
-    "Untitled.canvas"
+    "Untitled 1.canvas"
   ]
 }

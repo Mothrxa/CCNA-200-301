@@ -139,3 +139,12 @@
 | Security policy and enforcement   | Security polices can be applied to multiple devices <br>within a single central dashboard                                                | Unless using third-party tools or automation, typically security policies have to be applied on a device-by-device basis |
 | Troubleshooting                   | Centralized management makes troubleshooting much more effective due  to the ability to see the <br>whole network in a single  dashboard | Typically is more difficult and time-consuming from having to  troubleshoot on a device-by-device basis                  |
 | Monitoring and <br>reporting      | Cloud management enables  you to monitor your network  centrally to see and report on issues across all devices                          | Traditional networks monitor or report on devices using a third-party tool, which may require you to correlate the data  |
+### Configuration commands
+- Creates VRF
+	- (config)#ip vrf **vrf-name**
+- Assign an interface to a VRF
+	- (config-if)#ip vrf forwarding **vrf-name**
+- Show the routing table for a VRF
+	- (~)#show ip route vrf **vrf-name**
+- Ping in a VRF
+	- (~)#ping vrf **vrf-name** **ip-address**

@@ -1,11 +1,9 @@
 # Ethernet LANs
 
 ---
-
 # Chapter 4
 
 - Basic CLI commands
-
 ### Configuration commands
 - (config)#interface {type} {port-number}
 - (config-if)#speed {10 | 100 | 1000 | auto}
@@ -15,9 +13,7 @@
 - (config)#enable secret **password**
 - (config)#exit
 - (config)#end | Ctrl+Z
-
 ### EXEC commands
-
 - (#)debug all | undebug all
 - (#)reload
 - (#)copy running-config startup-config
@@ -32,9 +28,6 @@
 - (#)show mac address-table
 
 # Chapter 5
-
-## LAN Switching
-
 - Switches forward frames based on the destination MAC address:
     1. If the destination MAC address is a broadcast, multicast, or unknown destination unicast, the switch floods the frame.
     2. If the destination MAC address is a known unicast address :
@@ -43,19 +36,12 @@
 - Switches learn MAC address table entries based on the source MAC address:
     1. For each received frame, note the source MAC address and incoming interface ID.
     2. If not yet in the MAC address table, add an entry listing the MAC address and incoming interface.
-
 - **Switch's default settings**
-
-```
-• The interfaces are enabled by default, ready to start working once a cable is connected.
-• All interfaces are assigned to VLAN 1.
-• 10/100 and 10/100/1000 interfaces use autonegotiation by default.
-• The MAC learning, forwarding, flooding logic all works by default.
-• STP is enabled by default.
-```
-
-
-
+	- The interfaces are enabled by default, ready to start working once a cable is connected.
+	- All interfaces are assigned to VLAN 1.
+	- 10/100 and 10/100/1000 interfaces use autonegotiation by default.
+	- The MAC learning, forwarding, flooding logic all works by default.
+	- STP is enabled by default.
 ### Configuration commands
 - (#)show mac address-table
 - (#)show mac address-table dynamic [vlan **vlan-id** | address **mac-address** | interface **interface-id**] 
@@ -66,7 +52,6 @@
 - (config)#mac address-table aging-time **time-in-seconds** [vlan **vlan-number**]
 
 # Chapter 6
-
 ```
 - VTY lines are configured for Telnet & SSH login.
 - Connect to console with a rollover cable.
@@ -136,21 +121,15 @@
 
 - **IEEE Autonegotiation**
 
-```
 - Autonegotiation gives the devices on each link the means to agree to use the best speed without manually 
   configuring the speed on each switch port.
-- Devices send FLP (Fast Link Pulses) to declare their capababilities (speeds-duplex settings supported)
-- FLP use out of band electrical signaling, it establishes the connection for transmission before link up
-
-Use case:
-- Both endpoints send messages "out of band" compared to any specific data transmission using FLPs
-- The messages declare all supported speed and duplex combinationss
-- After hearing from the link partner each device chooses the fastest speed supported by both devices and the 
-  best duplex
-```
-
+- Devices send FLP (Fast Link Pulses) to declare their capabilities (speeds-duplex settings supported).
+- FLP use out of band electrical signaling, it establishes the connection for transmission before link up.
+- Use case:
+	- Both endpoints send messages "out of band" compared to any specific data transmission using FLPs.
+	- The messages declare all supported speed and duplex combinations.
+	- After hearing from the link partner each device chooses the fastest speed supported by both devices and the best duplex.
 ### Configuration commands
-
 - (config)#interface {type} {port-number}
 - (config)#interface range {type} {port-number} - {end-port-number}
 - (config-if)#shutdown | no shutdown
@@ -162,9 +141,7 @@ Use case:
 - (config-if)#no description
 - (config)#default interface **interface-id**
 - (config-if)#[no] mdix auto
-
 ### EXEC commands
-
 - (#)show running-config
 - (#)show running-config interface {type} {number}
 - (#)show running-config all

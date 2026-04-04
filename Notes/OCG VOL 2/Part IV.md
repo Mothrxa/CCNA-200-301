@@ -37,6 +37,7 @@
 		- *Capabilities list:* Information on what type of device it is.
 		- *Platform:* The model and OS level running on the device.
 	- CDP sends messages every 60 seconds by default, with a hold time of 180 seconds.
+	- CDP messages are sent to MAC address 0100:0CCC:CCCC.
 - **Link Layer Discovery Protocol (LLDP)**
 	- LLDP defined in 802.1AB, provides the same general features as CDP and has similar configuration and practically identical show commands.
 	- LLDP sends messages every 30 seconds by default, with a hold time of 120 seconds.
@@ -253,7 +254,7 @@
 - *SNMP*
 	- (config)#snmp-server {contact **e-mail** | location **address** | community **community-name** {ro | rw}}
 	- (config)#snmp-server host **nms-ip** version **version [community-name]** 
-	- (config)#snmp-server enable traps {config | snmp linkdown linkup}
+	- (config)#snmp-server enable traps **trap-types**
 - *FTP/TFTP*
 	- (~)#more flash0:/directory/file (displays the content of file in directory)
 	- (~)#{show | dir} flash: (lists the files in the directory (cd and pwd can be used))
